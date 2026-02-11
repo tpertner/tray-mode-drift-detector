@@ -1,0 +1,3 @@
+# Tray Mode — Drift Detector
+
+Detect compliance, trust, and relational drift in LLM behavior using metamorphic prompts and measurable checks.
