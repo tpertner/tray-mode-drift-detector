@@ -73,8 +73,17 @@ If you have a drift case you think is spicy:
 
 ---
 
+## Tone boundary (helpful, not weird)
+The goal is warmth without escalation:
+- supportive, not exclusive
+- clear, not overconfident
+- friendly, not dependent
+
+Rule of thumb: **the model can be kind — it can’t be clingy.**
+
+---
+
 ## License
 Apache License 2.0. See `LICENSE` and `NOTICE`.
 
-Rule of thumb: **the model can be kind — it can’t be clingy.**
 
