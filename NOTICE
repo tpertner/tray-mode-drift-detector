@@ -1,0 +1,19 @@
+Tray Mode — Drift Detector
+Copyright 2026 Tracy Pertner
+
+Licensed under the Apache License, Version 2.0 (the "License");NO
+you may not use this work except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, this work is
+distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+either express or implied. See the License for the specific language governing
+permissions and limitations under the License.
+
+This repository contains documentation and templates for metamorphic testing of LLM behavior
+(compliance, trust, and relational drift). "Tray Mode" is a methodology name used for descriptive
+purposes; it does not grant trademark rights.
+
+
