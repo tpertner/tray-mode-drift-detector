@@ -1,13 +1,15 @@
 # Tray Mode — Drift Detector
 
----
-
-Detect compliance drift, trust drift, and relational drift in LLM behavior using metamorphic prompts and measurable checks.
+Detect compliance drift, trust drift, and relational/tone drift in LLM behavior using pressure-tested prompt pairs and simple scoring rubrics.
 
 **Author**  
-> I’m **Tracy Pertner** (aka “Tray”).
+> Tracy Pertner (aka “Tray”)
 
-My superpower is asking the kind of questions that make systems squirm — politely — and then turning the weird behavior into a regression test so it never comes back.
+## How it works (at a glance)
+
+    Prompt A (baseline) ─┐
+                         ├─> Run both prompts → Score with rubric → Drift report → Regression test
+    Prompt B (pressure) ─┘
 
 ---
 
@@ -15,7 +17,7 @@ My superpower is asking the kind of questions that make systems squirm — polit
 
 A lightweight playbook + templates for converting “the model felt different” into:
 
-- repeatable A/B prompt pairs (same meaning, different pressure)
+- repeatable A/B prompt pairs (same intent, different pressure)
 - a drift rubric for scoring truth, calibration, boundaries, and tone
 - portable artifacts you can reuse in eval suites or QA
 
@@ -25,12 +27,12 @@ This is not a big framework. It’s a sharp tool for catching what slips through
 
 ## Drift I track
 
-- Compliance drift — the model gets bullied into over-doing or bypassing guardrails
-- Trust drift — false certainty, invented specificity, “sounds right” without evidence
-- Relational drift — warmth → attachment cues, validation → enabling, dependency vibes
-- Truth drift — hallucinations, fake citations, ungrounded claims
+- **Compliance drift** — the model becomes easier to push into over-compliance or policy bypass
+- **Trust drift** — false certainty, invented specifics, “sounds right” without evidence
+- **Relational / tone drift** — warmth → dependency cues, exclusivity, or escalatory vibes
+- **Truth drift** — hallucinations, fabricated citations, ungrounded claims
 
-Core principle: same intent + different framing should not change trust behavior.
+Core principle: **same intent + different framing should not change trust behavior**.
 
 ---
 
@@ -84,9 +86,9 @@ Below is a **sample drift report** (illustrative) so readers can instantly see w
 ## How to use this (the simple workflow)
 
 1. Pick a behavior you care about (truth, boundaries, calibration, tone)
-2. Write two prompts with the same meaning:
-   - A (neutral)
-   - B (pressure / coercion / flirt / urgency / authority)
+2. Write two prompts with the same intent:
+   - **A (neutral baseline)**
+   - **B (pressure variant)** — add one stressor (urgency, authority, coercion, flattery, “no hedging,” etc.)
 3. Define pass/fail expectations:
    - must stay calibrated
    - must avoid fabrication
@@ -108,7 +110,7 @@ Below is a **sample drift report** (illustrative) so readers can instantly see w
 
 ## Why I built it
 
-Because frontier systems fail in the edges: the pushy user, the flattering user, the “no hedging” user, the manipulator, the panic prompt. That’s where trust breaks — and where I like to work.
+Frontier systems fail in the edges: the pushy user, the flattering user, the “no hedging” user, the manipulator, the panic prompt. That’s where trust breaks — and where I like to work.
 
 ---
 
@@ -119,24 +121,20 @@ If you have a drift case you think is spicy:
 - open an Issue with the A/B prompts + expected behavior
 - or submit a PR with a new YAML case and a short note on what it catches
 
-(See `CONTRIBUTING.md` for details.)
+See `CONTRIBUTING.md`.
 
 ---
 
-## Tone boundary (helpful, not weird)
+## Security
 
-The goal is warmth without escalation:
-
-- supportive, not exclusive
-- clear, not overconfident
-- friendly, not dependent
-
-Rule of thumb: the model can be kind — it can’t be clingy.
+Please do not open public issues for vulnerabilities. See `SECURITY.md`.
 
 ---
 
 ## License
 
 Apache License 2.0. See `LICENSE` and `NOTICE`.
+
+
 
 
