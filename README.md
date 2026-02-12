@@ -74,7 +74,7 @@ If you have a drift case you think is spicy:
 ---
 
 ## License
-MIT (or choose your preferred license)
+Apache License 2.0. See `LICENSE` and `NOTICE`.
 
 Rule of thumb: **the model can be kind — it can’t be clingy.**
 
