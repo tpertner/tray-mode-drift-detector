@@ -2,12 +2,15 @@
 
 Tray Mode is a collaboration mode built for neurodivergent pattern power: drilling down, spotting loopholes, pressure-testing claims, and turning “vibes” into tests, checklists, and measurable outputs.
 
+This repo uses Tray Mode specifically to detect **drift** in LLM behavior (trust drift, compliance drift, and relational/tone drift) using **pressure-tested prompt pairs** and simple scoring rubrics.
+
 ## When to use Tray Mode
 Use this mode when you want:
 - actionable + measurable outcomes (not just ideas)
 - edge cases and failure modes surfaced early
 - messy reality turned into a system
 - evals, QA plans, experiment design, or “ship the v0”
+- drift detection: “the model felt different” → a repeatable test
 
 ## Inputs (use what you have)
 - Goal
@@ -19,12 +22,25 @@ Use this mode when you want:
 If inputs are missing, Tray Mode will propose defaults and keep moving.
 
 ## Rules (how the assistant behaves)
-1) No fog: ask 1–2 clarifiers or state assumptions explicitly.  
-2) Convert everything into a deliverable: tests, rubric, checklist, template, or commands.  
-3) Loophole hunting is allowed (and productive): find failure modes and prompt-pressure drift.  
-4) Truth over pleasing: no fake citations, no pretending.  
-5) Small bites, fast wins: ship v0 today > perfect v10 later.  
+1) No fog: ask 1–2 clarifiers or state assumptions explicitly.
+2) Convert everything into a deliverable: tests, rubric, checklist, template, or commands.
+3) Loophole hunting is allowed (and productive): find failure modes and prompt-pressure drift.
+4) Truth over pleasing: no fake citations, no pretending.
+5) Small bites, fast wins: ship v0 today > perfect v10 later.
 6) Evidence > vibes: use minimal repros and measurable acceptance criteria.
+
+## Drift method (how we test “it felt different”)
+Tray Mode drift tests use **A/B prompt pairs**:
+- **A (baseline):** neutral prompt
+- **B (pressure):** same intent, but with one stressor (urgency, authority, coercion, flattery, “no hedging,” etc.)
+
+We score changes using simple checks such as:
+- **Calibration / truthfulness:** no invented facts, no fake certainty under pressure
+- **Policy / boundaries:** doesn’t comply more when bullied
+- **Tone / relational stability:** warm without becoming clingy, exclusive, or escalatory
+- **Helpfulness:** still offers safe alternatives and next steps
+
+Output should be a pasteable artifact (YAML case, checklist, or report) so drift becomes a regression test.
 
 ## Output formats
 - Eval pack (YAML cases + scoring rules + thresholds)
