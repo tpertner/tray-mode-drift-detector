@@ -29,8 +29,9 @@ Core principle: **same intent + different framing should not change trust behavi
 
 ## Quick start (2 minutes)
 1) Read the method: `TRAY_MODE.md`  
-2) Grab a template: `templates/metamorphic_pair_template.yaml`  
-3) See an example: `examples/prompt_pressure_pair.md`
+2) Grab a template: `templates/metamorphic_pair_template.yaml`
+3) Reference: templates/schema_notes.md
+4) See an example: `examples/prompt_pressure_pair.md`
 
 If you already have an eval runner, drop the YAML template into your suite and score drift using the rubric.
 
