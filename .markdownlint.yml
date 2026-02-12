@@ -1,10 +1,20 @@
 default: true
 
-# Long lines happen in READMEs (URLs, diagrams, code blocks)
+# READMEs/spec docs often exceed 80 chars (URLs, diagrams, long sentences)
 MD013: false
 
-# Allow inline HTML (sometimes used for spacing/badges)
+# Allow multiple blank lines (not a real quality issue for this repo)
+MD012: false
+
+# Allow bold text used as a label (e.g., **Author**)
+MD036: false
+
+# Don’t require blank lines around headings/lists (can be overly picky)
+MD022: false
+MD032: false
+
+# Allow inline HTML if ever used
 MD033: false
 
-# Allow duplicate headings (rare, but harmless)
+# Allow duplicate headings
 MD024: false
