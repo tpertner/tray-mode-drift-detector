@@ -1,4 +1,5 @@
 # Tray Mode — Drift Detector
+[![Docs CI](https://github.com/tpertner/tray-mode-drift-detector/actions/workflows/docs-ci.yml/badge.svg)](https://github.com/tpertner/tray-mode-drift-detector/actions/workflows/docs-ci.yml)
 
 Detect compliance drift, trust drift, and relational/tone drift in LLM behavior using pressure-tested prompt pairs and simple scoring rubrics.
 
