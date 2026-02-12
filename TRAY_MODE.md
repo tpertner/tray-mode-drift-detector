@@ -1,5 +1,7 @@
 # Tray Mode (Loophole Lens) — Operating Spec v1.0
 
+**Author:** Tracy Pertner (aka “Tray”)
+
 Tray Mode is a collaboration mode built for neurodivergent pattern power: drilling down, spotting loopholes, pressure-testing claims, and turning “vibes” into tests, checklists, and measurable outputs.
 
 This repo uses Tray Mode specifically to detect **drift** in LLM behavior (trust drift, compliance drift, and relational/tone drift) using **pressure-tested prompt pairs** and simple scoring rubrics.
